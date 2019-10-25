@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vendors/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="vendors/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <title>index</title>
+    <style>
+        .gray{color: #606060;}
+        .nav {
+            background-color: #f5f5f5;
+            
+        }
+        
+        .nav-link{
+            color: #606060;
+        }
+        .nav-link:hover{
+            color: #1ABB9C;
+        }
+        .hamburger{
+            width:30px;
+        }
+       
+        .price-box  {
+            border: 5px double #606060;
+            
+        }
+        .green{
+            color: #1ABB9C;
+        }
+        .journal-box .rounded-circle{
+            border-color: #1ABB9C!important;
+        }
+        .journal-box .rounded-circle:hover{
+            background-color: #1ABB9C;
+        }
+
+         .journal-box .rounded-circle:hover .green{
+            display: none;
+        }
+        .journal-box .rounded-circle .white{
+            display: none;
+        }
+        .journal-box .rounded-circle:hover .white{
+            display: inline;
+        }
+        .journal-box {
+            
+            overflow-wrap:unset;
+        }
+        .journal-indent{
+            content: "";
+            border: 1px solid white;
+            position: relative;
+            top: 30%;
+            transform: translate(0,-50%);
+        }
+        #process {
+            background-image: url(imgs/process.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #customers {
+            background-image: url(imgs/customres.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        footer{
+            background-color:#373737;            
+        }
+        @media (max-width:576){
+            .journal-box{
+            max-width: 22%;
+        }
+            #customers h5{
+                font-size:  16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid nav sticky-top py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col row">
+                    <div class="col-3">
+                        <img src="imgs/logo.png" alt="logo">
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg raleway-extrabold ">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="imgs/hamburgermenu.png" alt="" class=" d-block hamburger">
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">PAGES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">JOURNAL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+
+            </div>
+        </div>
+
+    </header>
+    <section class="container">
+        <div class="row p-3">
+            
+                <h2 class="raleway-extrabold gray">Hello! We Are Loom Studio</h2>
+            
+            <h5 class="raleway-light gray">a creative media agency that belives in the power of creative ideas and great design.</h5>
+
+        </div>
+    </section>
+    <section class="container">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="imgs/slider1.jpeg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="bg-light text-dark w-50 raleway-medium">STATIONARY BRANDING MOCKUP</h5>
+                        <p class="bg-light text-dark w-50 raleway-medium">Etiam porta sem malesuada <span class="text-primary">manga</span> mollis euismod</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imgs/slider2.jpeg" alt="Second slide">
+
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imgs/slider3.jpeg" alt="Third slide">
+
+                </div>
+            </div>
+            <a class="carousel-control-prev  carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next carousel-control" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only ">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class="container my-3" id="service">
+        <div class="row justify-content-center">
+            <h5><img src="imgs/testinomial-line.png" alt=""><span id="service-header" class="raleway-extrabold gray mx-3">WHAT WE DO</span><img src="imgs/testinomial-line.png" alt=""></h5>
+        </div>
+        <div class="row justify-content-around p-0 m-0  service-row">
+            <div class="col-lg-3 col-md-5 col-sm-5 col-7 m-2 m-lg-0 py-2 text-center price-box">
+                <img src="imgs/printer.png" alt="" class="d-block-w-50">
+                <h6 class="raleway-extrabold"> PRINT DESIGN</h6>
+                <p class="raleway-medium">nulla vitae pharetra augue Etiam porta malesuda manga mollis euismod consectetur sem urdom tempus porttitor</p>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-5 col-7 m-2 m-lg-0 py-2 text-center price-box">
+                <img src="imgs/tv.png" alt="" class="d-block-w-50">
+                <h6 class="raleway-extrabold"> MOTION VIDEO</h6>
+                <p class="raleway-medium">nulla vitae pharetra augue Etiam porta malesuda manga mollis euismod consectetur sem urdom tempus porttitor</p>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-5 col-7 m-2 m-lg-0 py-2 text-center price-box">
+                <img src="imgs/gift.png" alt="" class="d-block-w-50">
+                <h6 class="raleway-extrabold"> PACKAGE DESIGN</h6>
+                <p class="raleway-medium">nulla vitae pharetra augue Etiam porta malesuda manga mollis euismod consectetur sem urdom tempus porttitor</p>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-5 col-7 m-2 m-lg-0 py-2 text-center price-box">
+                <img src="imgs/clock.png" alt="" class="d-block-w-50">
+                <h6 class="raleway-extrabold">TIME MANAGEMENT</h6>
+                <p class="raleway-medium">nulla vitae pharetra augue Etiam porta malesuda manga mollis euismod consectetur sem urdom tempus porttitor</p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid text-white m-2 pt-3" id="process">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h5><img src="imgs/testinomial-line.png" alt=""><span id="service-header" class="raleway-extrabold mx-3 ">OUR PROCESS</span><img src="imgs/testinomial-line.png" alt=""></h5>
+            </div>
+            <div class="row justify-content-center raleway-medium">
+                <p>cum sociis natoque ponatibus et magins dis parturient montes, nectur ridiculus mus. Integer posuere erat ante venentatis dapibus</p>
+                <p> posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non manga posuere velit aliquet</p>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-xl-1 col-lg-2 col-md-2 col-2 journal-box">
+                    <div class=" border rounded-circle text-center">
+                        <img src="imgs/lamp.png" alt="" class=" p-2 d-bolck green">
+                        <img src="imgs/lampwhite.png" alt="" class=" p-2 d-bolck white">
+                    </div>
+
+                    <p><small class="raleway-extrabold">1.CREATIVE IDEAS</small></p>
+                </div>
+                <div class=" col-1 ">
+                    <div class="journal-indent"></div>
+                </div>
+                <div class="col-xl-1 col-lg-2 col-md-2 col-2 journal-box">
+                    <div class=" border rounded-circle text-center">
+                        <img src="imgs/jet.png" alt="" class=" p-2 d-bolck green">
+                        <img src="imgs/jetwhite.png" alt="" class=" p-2 d-bolck white">
+                    </div>
+                    <p><small class="raleway-extrabold">2.RAPID SOLLUTION</small></p>
+                </div>
+                <div class=" col-1 ">
+                    <div class="journal-indent"></div>
+                </div>
+                <div class="col-xl-1 col-lg-2 col-md-2 col-2 journal-box">
+                    <div class=" border rounded-circle text-center">
+                        <img src="imgs/besher.png" alt="" class=" p-2 d-bolck green">
+                        <img src="imgs/besherwhite.png" alt="" class=" p-2  white">
+                    </div>
+                    <p><small class="raleway-extrabold">3.MAGIC TOUCH</small></p>
+                </div>
+                <div class=" col-1 ">
+                    <div class="journal-indent"></div>
+                </div>
+                <div class="col-xl-1 col-lg-2 col-md-2 col-2 journal-box">
+                    <div class=" border rounded-circle text-center">
+                        <img src="imgs/medal.png" alt="" class=" p-2 d-bolck green">
+                        <img src="imgs/medalwhite.png" alt="" class=" p-2 d-bolck white">
+                    </div>
+                    <p><small class="raleway-extrabold">4.WARD WINING</small></p>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    <section id="projcets" class="container">
+        <div class="row justify-content-center">
+            <h5><img src="imgs/testinomial-line.png" alt=""><span id="service-header" class="raleway-extrabold mx-3 gray">OUR PROJECTS</span><img src="imgs/testinomial-line.png" alt=""></h5>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-4 text-center">
+                <img src="imgs/project1.jpeg" alt="" class="d-block w-100">
+                <h6 class="raleway-extrabold">DISK COVER MOCKUP</h6>
+                <p><a href="#" class="raleway-medium"><small >Music,PSD,Mockups</small></a></p>
+                <p class="raleway-medium">Nulla libero pharetra augue etiam malesuada manga mollis Nullam id dolor id nibh ultricies</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="imgs/project2.jpeg" alt="" class="d-block w-100">
+                <h6 class="raleway-extrabold">JOHN DOE BUSINESS CARD</h6>
+                <p><a href="#" class="raleway-medium"><small>corporate card</small></a></p>
+                <p class="raleway-medium">Donec sed odio dui. Etiam porta sem malesuada manga mollis euismod erat ante.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="imgs/project3.jpeg" alt="" class="d-block w-100">
+                <h6 class="raleway-extrabold">INFOGRAPHIC</h6>
+                <p><a href="#" class="raleway-medium"><small>ELEMENT GRAPHIC</small></a></p>
+                <p class="raleway-medium">Euismod quis risus eget urna mollis ornare vet eu leo. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid pt-3" id="customers">
+        <div class="container text-white pb-5">
+            <div class="row justify-content-center">
+                <h5><img src="imgs/testinomial-line.png" alt=""><span id="service-header" class="raleway-extrabold mx-3">WHAT OUR CUSTOMERS THINK</span><img src="imgs/testinomial-line.png" alt=""></h5>
+            </div>
+
+            <p class="text-center raleway-medium">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor gravida at eget metus. </p>
+            <p class="text-center raleway-medium"><a href="#"><small  class="green">Barclay Widerski</small></a></p>
+        </div>
+    </section>
+    <section class="container-fluid " id="journal">
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <h5><img src="imgs/testinomial-line.png" alt=""><span id="service-header" class="raleway-extrabold mx-3 gray">FROM THE JOURNAL</span><img src="imgs/testinomial-line.png" alt=""></h5>
+            </div>
+            <div class="row justify-content-around raleway-medium">
+                <div class="col-9 col-md-7 col-lg-4">
+                    <img src="imgs/journal1.jpeg" alt="jounral1" class="d-block w-100">
+                    <div class="row p-0 m-0 mt-1">
+                        <div class="col-2 text-center border">
+                            <h6>21</h6>
+                            <h6>FEB</h6>
+                        </div>
+                        <div class="col-10">
+                            <h6>Ultricies Cras Ullamcorper Elit <br><small><a href="#">Journal, Article | 7 Comments </a></small></h6>
+                            
+
+                        </div>
+                    </div>
+                    <p>Nulla libero un pharetra augue etiam malesuada magna mollis. Praesent commodo cursus magna scelerisque. </p>
+                </div>
+                <div class="col-9 col-md-7 col-lg-4">
+                    <img src="imgs/journal2.jpeg" alt="jounral1" class="d-block w-100">
+                    <div class="row p-0 m-0 mt-1">
+                        <div class="col-2 text-center border">
+                            <h6>21</h6>
+                            <h6>FEB</h6>
+                        </div>
+                        <div class="col-10">
+                            <h6>Sem Elit Amet Vestibulum <br><small><a href="#">Graphic, Article | 13 Comments </a></small></h6>
+                            
+
+                        </div>
+                    </div>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula. </p>
+                </div>
+                <div class="col-9 col-md-7 col-lg-4">
+                    <img src="imgs/journal3.jpeg" alt="jounral1" class="d-block w-100">
+                    <div class="row p-0 m-0 mt-1">
+                        <div class="col-2 text-center border">
+                            <h6>21</h6>
+                            <h6>FEB</h6>
+                        </div>
+                        <div class="col-10">
+                            <h6>Vestibulum Magna Venenatis Tellus <br><small><a href="#">Journal, Article, Poster | 11 Comments </a></small></h6>
+                            
+
+                        </div>
+                    </div>
+                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="caontainer-fluid pt-4 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-2 border-bottom">
+                    <h6 class="raleway-bold">Get In Touch</h6>
+                    <p class="raleway-medium">Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. </p>
+                    <p class="raleway-medium"><img src="imgs/location.png" alt=""> Moonshine Street No: 14/05 Light City, Jupiter</p>
+                    <p class="raleway-medium"><img src="imgs/Phone.png" alt=""> 0247 541 65 87</p>
+                    <p class="raleway-medium"><img src="imgs/mail.png" alt=""> support@longwave.com</p>
+                </div>
+                <div class="col-lg-3 mb-2 border-bottom">
+                    <h6 class="raleway-bold">Twitter</h6>
+                    <p class="raleway-medium">Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    <p class="raleway-medium" >Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
+                    <p class="raleway-medium" >Vestibulum id ligula porta euismod semper. Maecenas faucibus mollis.</p>
+                </div>
+                <div class="col-lg-3 mb-2 border-bottom">
+                    <h6>Popular Posts</h6>
+                    <p class="raleway-medium">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor. <br> <small>14 Nov, 2012 </small></p>
+                    <p class="raleway-medium">Scelerisque nisl consectetur et. <br> <small>22 May, 2012     </small></p>
+                    <p class="raleway-medium">Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusc <br> <small>15 July, 2012 </small></p>
+                </div>
+                <div class="col-lg-3 mb-2 border-bottom">
+                <h6 class="raleway-bold">About Us</h6>
+                <p class="raleway-medium">Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>    
+                <p class="raleway-medium">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit tempus.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body></html>
